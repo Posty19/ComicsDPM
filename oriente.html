@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lo de los comis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 onclick="index('index.html')">Comics Landia</h1>
+
+            <div>
+                <input type="text" placeholder="busqueda de comics">
+                <button type="button"><img src="img/icons/buscar.png" class="imgIcon" alt="busqueda"></button>
+            </div>
+
+            <a href="Sesion.html">Iniciar Sesión</a>
+        </div>
+
+        <nav>
+            <img src="img/icons/menuBlack.png" class="imgIcon" alt="abrir menú" title="abrir el menu"
+                onclick="openMenu()">
+
+            <a href="index.html#novedades">Ultimas novedades</a>
+            <a href="index.html#listasRecomendadas">Recomendaciones</a>
+            <a href="contacto.html">Contactanos</a>
+
+
+        </nav>
+    </header>
+    <aside id="menuLateral">
+        <img src="img/icons/menuBlack.png" class="imgIcon imgMenu" alt="cerrar menú" title="cerrar el menu"
+            onclick="closeMenu()">
+        <ul class="menu">
+            <li> <a href="#">Comics por Orígen </a><img onclick="desplegarSubmenu(0)"
+                    src="img/icons/flecha-hacia-abajo-para-navegar.png" class="imgIcon menuArrow" alt="flecha navegar">
+                <ul class="subMenu">
+                    <li> <a href="#">Marvel</a> </li>
+                    <li> <a href="#">DC</a> </li>
+                    <li> <a href="oriente.html">Oriental</a> </li>
+                    <li> <a href="#">Europeos</a> </li>
+                    <li> <a href="#">Otros</a> </li>
+                </ul>
+            </li>
+            <li> <a href="#">Comics por Genero </a><img onclick="desplegarSubmenu(1)"
+                    src="img/icons/flecha-hacia-abajo-para-navegar.png" class="imgIcon menuArrow" alt="flecha navegar">
+                <ul class="subMenu">
+                    <li> <a href="#">Super Heroes</a> </li>
+                    <li> <a href="#">Fantasia</a> </li>
+                    <li> <a href="#">Ciencia Ficcion</a> </li>
+                    <li> <a href="#">Aventuras</a> </li>
+                    <li> <a href="humor.html">Humor</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">Nuestros Comics </a><img onclick="desplegarSubmenu(2)"
+                    src="img/icons/flecha-hacia-abajo-para-navegar.png" class="imgIcon menuArrow" alt="flecha navegar">
+                <ul class="subMenu">
+                    <li> <a href="atrMortadelo.html">Mortadelo y filemon</a> </li>
+                    <li> <a href="#">Super Lopez</a> </li>
+                    <li> <a href="#">Zippi y Zappe</a> </li>
+                    <li> <a href="#">Capitan trueno</a> </li>
+                    <li> <a href="#">Ver todos</a> </li>
+                </ul>
+            </li>
+            <li><a href="clasicos.html">Clasicos</a></li>
+            <li><a href="tienda.html">merchandising</a></li>
+
+        </ul>
+
+    </aside>
+    <aside id="capaOpaca" onclick="closeMenu()"></aside>
+    <main>
+
+        <section id="series">
+
+            <div class="serie">
+                <img src="img/maximunBerserk1.jpg" alt="Berserk">
+                <div>
+                    <h3>Berserk</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione odit repudiandae omnis facilis, fugiat quod expedita distinctio quaerat dolor. Itaque non similique odit omnis laboriosam molestias, consequuntur vitae. Vero quia iure sequi, alias maxime aliquam at voluptate eveniet voluptatibus, ipsam hic. Optio a maiores tempore veniam laborum. Quas, consequatur veritatis.
+                    </p>
+                    <p class="data"><strong>Autor:</strong> Kentaro Miura</p>
+                    <p class="data"><strong>Año de publicación:</strong> 1986</p>
+                    <div class="btn"><button type="button"><a href="atrBerserk.html">Ver Más</a></button></div> 
+                </div>
+            </div>
+            <div class="serie">
+                <img src="img/fullMetal.jpeg" alt="fullmetal">
+                <div>
+                    <h3>FullmetalAlchemist</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione odit repudiandae omnis facilis, fugiat quod expedita distinctio quaerat dolor. Itaque non similique odit omnis laboriosam molestias, consequuntur vitae. Vero quia iure sequi, alias maxime aliquam at voluptate eveniet voluptatibus, ipsam hic. Optio a maiores tempore veniam laborum. Quas, consequatur veritatis.
+                    </p>
+                    <p class="data"><strong>Autor:</strong> Hiromu Arakawa</p>
+                    <p class="data"><strong>Año de publicación:</strong> 2001</p>     
+                    <div class="btn"><button type="button"><a href="">Ver Más</a></button></div> 
+                </div>
+            </div>
+            <div class="serie">
+                <img src="img/bobobo.webp" alt="Bobobo-bo-bo-bobo">
+                <div>
+                    <h3>Bobobo-bo-bo-bobo</h3>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione odit repudiandae omnis facilis, fugiat quod expedita distinctio quaerat dolor. Itaque non similique odit omnis laboriosam molestias, consequuntur vitae. Vero quia iure sequi, alias maxime aliquam at voluptate eveniet voluptatibus, ipsam hic. Optio a maiores tempore veniam laborum. Quas, consequatur veritatis.
+                    </p>
+                    <p class="data"><strong>Autor:</strong> Yoshio Sawai</p>
+                    <p class="data"><strong>Año de publicación:</strong> 2001</p>     
+                    <div class="btn"><button type="button"><a href="">Ver Más</a></button></div> 
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>derechos de autor &copy; 2024 WebCom Conference</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>

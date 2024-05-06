@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lo de los comis</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 onclick="index('index.html')">Comics Landia</h1>
+
+            <div>
+                <input type="text" placeholder="busqueda de comics">
+                <button type="button"><img src="img/icons/buscar.png" class="imgIcon" alt="busqueda"></button>
+            </div>
+
+            <a href="Sesion.html">Iniciar Sesión</a>
+        </div>
+
+        <nav>
+            <img src="img/icons/menuBlack.png" class="imgIcon" alt="abrir menú" title="abrir el menu"
+                onclick="openMenu()">
+
+            <a href="index.html#novedades">Ultimas novedades</a>
+            <a href="index.html#listasRecomendadas">Recomendaciones</a>
+            <a href="contacto.html">Contactanos</a>
+
+
+        </nav>
+    </header>
+    <aside id="menuLateral">
+        <img src="img/icons/menuBlack.png" class="imgIcon imgMenu" alt="cerrar menú" title="cerrar el menu"
+            onclick="closeMenu()">
+        <ul class="menu">
+            <li> <a href="#">Comics por Orígen </a><img onclick="desplegarSubmenu(0)"
+                    src="img/icons/flecha-hacia-abajo-para-navegar.png" class="imgIcon menuArrow" alt="flecha navegar">
+                <ul class="subMenu">
+                    <li> <a href="#">Marvel</a> </li>
+                    <li> <a href="#">DC</a> </li>
+                    <li> <a href="oriente.html">Oriental</a> </li>
+                    <li> <a href="#">Europeos</a> </li>
+                    <li> <a href="#">Otros</a> </li>
+                </ul>
+            </li>
+            <li> <a href="#">Comics por Genero </a><img onclick="desplegarSubmenu(1)"
+                    src="img/icons/flecha-hacia-abajo-para-navegar.png" class="imgIcon menuArrow" alt="flecha navegar">
+                <ul class="subMenu">
+                    <li> <a href="#">Super Heroes</a> </li>
+                    <li> <a href="#">Fantasia</a> </li>
+                    <li> <a href="#">Ciencia Ficcion</a> </li>
+                    <li> <a href="#">Aventuras</a> </li>
+                    <li> <a href="humor.html">Humor</a> </li>
+                </ul>
+            </li>
+            <li><a href="#">Nuestros Comics </a><img onclick="desplegarSubmenu(2)"
+                    src="img/icons/flecha-hacia-abajo-para-navegar.png" class="imgIcon menuArrow" alt="flecha navegar">
+                <ul class="subMenu">
+                    <li> <a href="atrMortadelo.html">Mortadelo y filemon</a> </li>
+                    <li> <a href="#">Super Lopez</a> </li>
+                    <li> <a href="#">Zippi y Zappe</a> </li>
+                    <li> <a href="#">Capitan trueno</a> </li>
+                    <li> <a href="#">Ver todos</a> </li>
+                </ul>
+            </li>
+            <li><a href="clasicos.html">Clasicos</a></li>
+            <li><a href="tienda.html">merchandising</a></li>
+
+        </ul>
+
+    </aside>
+    <aside id="capaOpaca" onclick="closeMenu()"></aside>
+    <main>
+        <section id="galeria">
+            <!-- Container for the image gallery -->
+            <div class="container">
+
+                <!-- Full-width images with number text -->
+                <div class="mySlides img1">
+                    <div class="numbertext">1 / 6</div>
+
+                </div>
+
+                <div class="mySlides img2">
+                    <div class="numbertext">2 / 6</div>
+
+                </div>
+
+                <div class="mySlides img3">
+                    <div class="numbertext">3 / 6</div>
+
+                </div>
+
+                <div class="mySlides img4">
+                    <div class="numbertext">4 / 6</div>
+
+                </div>
+
+                <div class="mySlides img5">
+                    <div class="numbertext">5 / 6</div>
+
+                </div>
+
+                <div class="mySlides img6">
+                    <div class="numbertext">6 / 6</div>
+
+                </div>
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </section>
+        <section id='novedades'>
+            <h3>Ultimos añadidos</h3>
+            <div class="listaNovedades">
+                <a class="nuevo" href="atrBerserk.html"><img src="img/maximunBerserk1.jpg" alt="Berserk"></a>
+                <a class="nuevo" href="#"><img src="img/fullMetal.jpeg" alt="Berserk"></a>
+                <a class="nuevo" href="atrMortadelo.html"><img src="img/Mortadeloa.jpg" alt="Berserk"></a>
+                <a class="nuevo" href="#"><img src="img/bobobo.webp" alt="Berserk"></a>
+                <a class="nuevo" href="#"><img src="img/BatmanDKR.jpg" alt="Berserk"></a>
+            </div>
+
+        </section>
+        <section id="listasRecomendadas">
+            <h3>Te recomendamos</h3>
+
+            <div class="recomendacion" onclick="index('atrBerserk.html')">
+                <img src="img/maximunBerserk1.jpg" alt="Berserk">
+                <img src="img/maximunBerserk2.jpg" alt="Berserk">
+                <h4>Berserk</h4>
+                <img src="img/maximunBerserk2.jpg" alt="Berserk">
+                <img src="img/maximunBerserk1.jpg" alt="Berserk">
+            </div>
+            <div class="recomendacion" onclick="index('humor.html')">
+                <img src="img/Mortadelo1.jpg" alt="Humor">
+                <img src="img/bobobo.webp" alt="Humor">
+                <h4>Humor</h4>
+                <img src="img/mortadelob.jpg" alt="Humor">
+                <img src="img/Mortadeloa.jpg" alt="Humor">
+            </div>
+            <div class="recomendacion" onclick="index('atrMortadelo.html')">
+                <img src="img/Mortadeloa.jpg" alt="Mortadelo">
+                <img src="img/mortadelob.jpg" alt="Mortadelo">
+                <h4>Mortadelo</h4>
+                <img src="img/mortadelob.jpg" alt="Mortadelo">
+                <img src="img/Mortadeloa.jpg" alt="Mortadelo">
+            </div>
+            <div class="recomendacion">
+                <img src="img/maximunBerserk1.jpg" alt="Berserk">
+                <img src="img/fullMetal.jpeg" alt="Berserk">
+                <h4>Berserk</h4>
+                <img src="img/fullMetal.jpeg" alt="Berserk">
+                <img src="img/maximunBerserk1.jpg" alt="Berserk">
+            </div>
+            <div class="recomendacion">
+                <img src="img/maximunBerserk1.jpg" alt="Berserk">
+                <img src="img/fullMetal.jpeg" alt="Berserk">
+                <h4>Berserk</h4>
+                <img src="img/fullMetal.jpeg" alt="Berserk">
+                <img src="img/maximunBerserk1.jpg" alt="Berserk">
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <p>derechos de autor &copy; 2024 WebCom Conference</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>

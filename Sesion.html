@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <form action="" id="id_inicio">
+        <div class="container">
+            <h1 onclick="index('index.html')">Comics Landia</h1>
+            <div class="marco">
+                <div class="formData">
+                    <!-- EMAIL -->
+                    <label for="email">Correo electronico:</label>
+                    <div id="errorE" class="error"></div>
+                    <input tabindex="4" type="text" id="email" itemid="email">
+                </div>
+                <div class="formData">
+                    <!-- Contraseña -->
+                    <label for="pass">Contraseña:</label>
+                    <div id="errorPass" class="error"></div>
+                    <input tabindex="5" type="password" id="pass" itemid="pass">
+                </div>
+                <div class="btn" onclick="login()">
+                    Iniciar Sesion
+                </div>
+                <p>
+                    Al continuar, aceptas las <a href="#"> Condiciones de uso y venta</a>. Consulta nuestro <a href="#">Aviso de privacidad</a>, nuestro <a href="#">Aviso sobre cookies </a>.
+                </p>
+                <hr>
+                <p> No tienes una cuenta</p>
+                <div class="btn" onclick="changeForm()">
+                    registrarse
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <form action="" id="id_registro">
+        <div class="container">
+            <h1 onclick="index()">Comics Landia</h1>
+            <div class="formData">
+                <!-- Nombre -->
+                <label for="name">Nombre:</label>
+                <div id="errorN" class="error"></div>
+                <input tabindex="1" type="text" id="name" itemid="name">
+            </div>
+            <div class="formData">
+                <!-- 1er Apellido -->
+                <label for="lastName">Apellido:</label>
+                <div id="errorLN" class="error"></div>
+                <input tabindex="2" type="text" id="lastName" itemid="lastName">
+            </div>
+            <div class="formData">
+                <!-- Fecha de nacimiento -->
+                <label for="birthDate">Fecha de nacimiento:</label>
+                <div id="errorBD" class="error"></div>
+                <input tabindex="3" type="date" id="birthDate" itemid="birthDate">
+            </div>
+            <div class="formData">
+                <!-- EMAIL -->
+                <label for="email">Correo electronico:</label>
+                <div id="errorE" class="error"></div>
+                <input tabindex="4" type="text" id="email" itemid="email">
+            </div>
+            <div class="formData">
+                <!-- Contraseña -->
+                <label for="pass">Contraseña:</label>
+                <div id="errorPass" class="error"></div>
+                <input tabindex="5" type="password" id="pass" itemid="pass" placeholder="minimo 6 caracteres">
+            </div>
+            <div class="formData">
+                <!-- Contraseña repetir -->
+                <label for="pass2">Confirmar Contraseña:</label>
+                <div id="errorPass2" class="error"></div>
+                <input tabindex="6" type="password" id="pass2" itemid="pass2">
+            </div>
+            <div class="btn" onclick="validar()">
+                Continuar
+            </div>
+            <hr>
+            <p> tienes una cuenta </p>
+            <div class="btn" onclick="changeForm()">
+                Iniciar sesión
+            </div>
+        </div>
+    </form>
+
+    <footer>
+        <p>derechos de autor &copy; 2024 WebCom Conference</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+body{
+    background-color: whitesmoke;
+}
+#id_registro{
+    display: none;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 400px;
+    padding: .8em 1.5em;
+    justify-content: space-around;
+}
+
+input{
+    width: 100%;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+input,label{
+    font-size: 1.1em;
+}
+.btn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: rgb(67, 241, 44);
+    border: none;
+    border-radius: 5px;
+    padding: .5em 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 1s;
+}
+.btn:hover{
+    background-color: rgb(50, 189, 32);
+}
+
+.error{
+    color:red;
+    font-weight: bold;
+    
+}
+form p{
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: crimson;
+    cursor: pointer;
+}
+.marco{
+    border: 1px solid darkgray;
+    padding: 1em;
+}
+footer{
+    text-align: center;
+}

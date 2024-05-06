@@ -1,0 +1,514 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+/*header*/
+header{
+    width: 100%;
+    padding: .5em;
+    background-color: crimson;
+    color: white;
+}
+h1{
+    cursor: pointer;
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5em 1em;
+ 
+}
+header div a{
+    font-size: 1.3em;
+    margin-right: 1em;
+}
+header div div{
+    width: 49%  ;
+    display: flex;
+    justify-content: center;
+}
+header div div input{
+    width: 80%;
+    border-radius: 10px 0 0 10px;
+    font-size: 24px;
+    border: none;
+    padding-left: 1em;
+}
+header div div button{
+    width: 20%;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    background-color: goldenrod;
+}header div div button:hover{
+    background-color: rgb(190, 146, 32);
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: .8em;
+}
+
+nav img, nav a{
+    margin: .5em 1em;
+}
+nav a{
+    font-size: 1.3em;
+}
+header a:hover{
+    text-decoration: underline;
+}
+
+/*header*/
+/*iconos de menu*/
+.imgIcon{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+/*iconos de menu*/
+/* menu lateral*/
+aside#menuLateral{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(233, 223, 223);
+    width: 50%;
+    max-width: 350px;
+    z-index: 99;
+    min-height: 100%;
+    transition: all .5s;
+    overflow: auto;
+    
+}
+aside#capaOpaca{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(233, 223, 223, 0.425);
+    width: 100%;
+    height: 100%;
+    z-index: 90;
+    transition: all .5s;
+}
+aside#menuLateral>img{
+    position: absolute;
+    right: 1em;
+    top: 1em;
+}
+aside#menuLateral ul{
+    margin-top: 3em;
+
+}
+aside#menuLateral ul li img{
+    transition: all .3s;
+}
+aside#menuLateral ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.3em;
+}
+aside#menuLateral ul a:hover{
+    text-decoration: underline;
+}
+aside#menuLateral ul ul{
+    display: none;
+    margin: 0;
+}
+/* menu lateral*/
+/*main*/
+main{
+    margin: 0px 10%;
+    background-color: white;
+
+}
+/*main*/
+main{
+    min-height: 75svh;
+
+}
+    /* Galeria movil */
+
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+        position: relative;
+    }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+  }
+  .img1{
+    background-image: url('../img/galeria/BatmanTheDKR.jpg');
+  }
+  .img2{
+    background-image: url('../img/galeria/berserk.jpg');
+  }
+  .img3{
+    background-image: url('../img/galeria/Bobobo.jpg');
+  }
+  .img4{
+    background-image: url('../img/galeria/marvelHeroes.jpg');
+  }
+  .img5{
+    background-image: url('../img/galeria/mortadelo.webp');
+  }
+  .img6{
+    background-image: url('../img/galeria/superman.webp');
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+    /* bloque de las novedades*/
+main #novedades{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+main #novedades .listaNovedades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+main #novedades .listaNovedades a{
+    flex: 10%;
+    max-width: 15%;
+    transition: all .5s;
+}
+main #novedades .listaNovedades a:hover{
+    max-width: 17%;
+}
+a img{
+    width: 100%;
+}
+
+    /* bloque de las recomendaciones*/
+
+main #listasRecomendadas{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+main #listasRecomendadas h3{
+    min-width: 100%;
+}
+main #listasRecomendadas .recomendacion{
+    max-width: 23%;
+    margin: 0 2%;
+    flex: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+
+}
+.recomendacion h4{
+    text-align: center;
+    width: 100%;
+    transition: all 1s;
+}
+.recomendacion:hover h4{
+    text-decoration: none;
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+}
+.recomendacion img{
+    margin: 0;
+    max-width: 40%;
+    height: 120px;
+    transition: all 1s;
+}
+.recomendacion:hover img{
+    height: 150px;
+}
+    /* series */
+#series{
+    padding-top: 1em;
+}
+#series .serie{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em .5em;
+    background-color: rgb(233, 227, 227); 
+    border-radius: 10px;
+
+}
+#series .serie div{
+    width: 80%;
+    box-sizing: border-box;
+    padding-top: 5em;
+    padding: 2em;
+}
+#series .serie div .data{
+    display: inline;
+    margin-right: 2em;
+}
+.btn button{
+    border: none;
+    padding: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: crimson;
+    color: white;
+    min-width: 10%;
+    text-align: center;
+
+}
+#series .serie div .btn button a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+.btn button:hover{
+    text-decoration: underline;
+}
+#series .serie div .btn button:hover a{
+    text-decoration: underline;
+}
+#series .serie img{
+    width: 20%;
+}
+    /*articulos*/
+#articulos{
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    padding: 1em 1% 2em 1%;
+    gap: 1%;
+}
+#articulos .articulo img{
+    width: 100%;
+}
+/*merchan*/
+#lisataArticulas{
+    padding-top: 1em;
+}
+#lisataArticulas .producto{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1em .5em;
+    background-color: rgb(233, 227, 227); 
+    border-radius: 10px;
+    
+}
+#lisataArticulas .producto div{
+    width: 69%;
+    box-sizing: border-box;
+    padding-top: 5em;
+    padding: 2em;
+}
+#lisataArticulas .producto div .data{
+    display: inline;
+    margin-right: 2em;
+}
+#lisataArticulas .producto div .btn button a{
+    color: white;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+}
+#lisataArticulas .producto div .btn button:hover a{
+    text-decoration: underline;
+}
+#lisataArticulas .producto img{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+/* imagen aumentada */
+.capaOpaca{
+    background-color: #1f1f1fe0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.capaOpaca img{
+    width: auto;
+    height: auto;
+}
+.capaOpaca .cierre{
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    font-size: 2em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    transition: all .5s;
+}
+.capaOpaca .cierre:hover{
+    cursor: pointer;
+    text-shadow: 2px 2px 5px white;
+    font-size: 2.5em;
+}
+
+/* Comics Clasicos */
+main>h2 {
+    text-align: center;
+    font-size: 2.2em;
+    padding-top: 1em;
+    margin-bottom: 0;
+    padding-bottom: 3px;
+}
+#comic{
+    display: flex;
+    justify-content: space-around;
+    
+}
+#comic .imgs{
+    width: 40%;
+}
+#comic .imgs .maximizada{
+    width: 95%;
+    margin: .5em auto;
+}
+#comic .imgs .mini{
+    width: 15%;
+    cursor: pointer;
+
+}
+#comic .datos{
+    width: 55%;
+}
+/* footer*/
+footer{
+    background-color: darkgray;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    margin: 0;
+    min-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media (orientation: portrait){
+    
+    header, header nav, header div{
+        padding: 0 !important;
+    }
+    header div{
+        flex-direction: column;
+    }
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ff4949;
+        margin: .5em 0 !important;
+    }
+    header div div{
+        flex-direction: row;
+    }
+    
+    
+    aside#menuLateral{
+        min-width: 100%;
+        position: absolute !important;
+        min-height: 50% !important;
+        text-align: center;
+    }
+    aside#menuLateral>ul{
+        list-style-type: none;
+        font-size: 1.8em;
+    }
+    aside#menuLateral ul ul{
+        list-style-type: none;
+    }
+    aside#menuLateral>img{
+        position: absolute;
+        left: 1em;
+        top: 1em;
+        height: 50px;
+        width: 50px;
+    }
+    main {
+        margin: 5px 1% 0 1% !important;
+    }
+
+}

@@ -339,12 +339,12 @@ function verImg(source){
 
     let portada = document.getElementById('port');
     let direccion = source.split('/');
-    if(direccion.length == 10){
-        console.log(direccion[direccion.length-1]);
+    if(direccion[direccion.length-1] == 'comandosEnAccion2Portada.jpg'){
+        //console.log(direccion[direccion.length-1]);
         portada.src='../img/Clasicos/'+direccion[direccion.length-1];
     }else{
-        console.log(direccion.length);
-        console.log(direccion[direccion.length]);
+        //console.log(direccion.length);
+        //console.log(direccion[direccion.length]);
         portada.src='../img/Clasicos/ComandosEnAccion2/'+direccion[direccion.length-1];
     }
 }

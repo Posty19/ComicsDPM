@@ -335,12 +335,18 @@ function cargarComic(){
     
 }
 function verImg(source){
+
+
     let portada = document.getElementById('port');
-    console.log(source);
-    source= source.slice(8);
-    //source = '../'+source;
-    portada.src = source;
-    console.log(portada.src);
+    let direccion = source.split('/');
+    if(direccion.length == 10){
+        //console.log(direccion[direccion.length-1]);
+        portada.src='../img/Clasicos/'+direccion[direccion.length-1];
+    }else{
+        //console.log(direccion.length);
+        //console.log(direccion[direccion.length]);
+        portada.src='../img/Clasicos/ComandosEnAccion2/'+direccion[direccion.length-1];
+    }
 }
 
 //funciones de la pagina de obras
